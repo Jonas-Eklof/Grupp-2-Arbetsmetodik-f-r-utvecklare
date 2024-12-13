@@ -1,1 +1,1 @@
-# Grupp-2-Arbetsmetodik-f-r-utvecklare
+# Grupp 2 - Arbetsmetodik för utvecklare
