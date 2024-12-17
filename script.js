@@ -1,5 +1,3 @@
-import db from "./db.js";
-
 // Globala variabler ------------------------------------------
 
 // Todays Special variabler --------------------
