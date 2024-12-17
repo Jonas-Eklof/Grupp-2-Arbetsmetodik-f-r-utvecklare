@@ -104,19 +104,49 @@ body {
     padding: 10px 20px;
   }
 }
-/* Madelen Hamburger Menu Stop */
+/* Madelen Hamburger Menu End */
 
 /* Madelen Feedback form Start */
 .feedback-container {
   background-color: #DACABD;
   border-radius: 10px;
   margin: 30px;
+  padding: 10px;
 }
 
+.feedback-header {
+  margin-bottom: 20px;
+}
 
 .feedback-form label {
   display: block;
   margin-bottom: 8px;
   font-weight: bold;
-
 }
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  outline: none;
+}
+
+.feedback-form button {
+  background-color: white;
+  padding: 10px 15px; /* Top, Right */
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.feedback-form button:hover {
+  background-color: gray;
+}
+/* Madelen Feedback form End */
