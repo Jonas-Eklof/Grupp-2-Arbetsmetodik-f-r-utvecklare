@@ -8,14 +8,30 @@ img {
   width: 100%;
 }
 
+body {
+  background-color: #222325;
+  /* color: #DACABD; */
+}
+
+.feedback-body { /* Dont know if needed */
+  justify-content: center;
+  align-items: center;
+}
+
 /* Madelen Hamburger Menu Start */
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px 20px; /* Top, Right */
-  background-color: #333;
-  color: white;
+  padding: 20px 20px; /* Top, Right */
+  background-color: #222325;
+  color: #D49F54;
+  border-bottom: 1px solid #D49F54; /* Thin line under nav bar */
+}
+
+.logo {
+  font-size: 24px;
+  padding-left: 10px;
 }
 
 /* Hamburger Icon */
@@ -23,10 +39,12 @@ img {
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  margin-left: auto; /* Pushes menu to the right */
+  padding-right: 20px;
 }
 
 .hamburger span {
-  background-color: white;
+  background-color: #D49F54;
   height: 3px;
   width: 25px;
   margin: 3px 0; /* Top, Right */
@@ -35,9 +53,10 @@ img {
 
 /* Nav Menu */
 .nav-menu {
+  color: #D49F54;
   display: none;
   list-style-type: none;
-  background-color: #444;
+  background-color: #222325;
   position: absolute;
   top: 50px;
   left: 0;
@@ -50,7 +69,7 @@ img {
 }
 
 .nav-menu a {
-  color: white;
+  color: #D49F54;
   text-decoration: none;
   display: block;
   padding: 10px;
@@ -86,3 +105,18 @@ img {
   }
 }
 /* Madelen Hamburger Menu Stop */
+
+/* Madelen Feedback form Start */
+.feedback-container {
+  background-color: #DACABD;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+
+.feedback-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+
+}

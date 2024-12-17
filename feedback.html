@@ -4,8 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script src="db.js" defer></script>
 </head>
-<body>
+<body class="feedback-body">
+
+    <nav class="navbar">
+          <!-- logo -->
+       <h1 class="logo">Taverna</h1>
+        <!-- hamburger icon -->
+  
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- menu links -->
+       <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#order">Order</a></li>
+        <li><a href="#food">Food and Drink</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+       </ul>
+      </nav>
+
+
+      <section class="feedback-container">
+    <h1>We Value Your Feedback!</h1>
+    <form action="#" method="post" class="feedback-form">
+        <!-- name field -->
+         <label for="name">Your Name</label>
+         <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+         <!-- email field -->
+          <label for="email">Your Email</label>
+          <input type="text" id="email" name="email" placeholder="Enter your email" required>
+
+          <!-- feedback field -->
+           <label for="message">Your Feedback</label>
+           <textarea id="message" name="message" rows="5" placeholder="Write your feedback here..." required></textarea>
+
+           <!-- submit button -->
+            <button type="submit">Submit</button>
+    </form>
+    </section>
+
+
+
+
+
+
     
 </body>
 </html>
