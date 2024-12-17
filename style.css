@@ -7,3 +7,82 @@
 img {
   width: 100%;
 }
+
+/* Madelen Hamburger Menu Start */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px; /* Top, Right */
+  background-color: #333;
+  color: white;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  background-color: white;
+  height: 3px;
+  width: 25px;
+  margin: 3px 0; /* Top, Right */
+  transition: all 0.3s ease;
+}
+
+/* Nav Menu */
+.nav-menu {
+  display: none;
+  list-style-type: none;
+  background-color: #444;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-menu li {
+  padding: 10px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+.nav-menu a:hover {
+  background-color: #555;
+}
+
+.nav-menu.active {
+  display: block;
+}
+
+/* Media Query */
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    background-color: transparent;
+  }
+
+  .nav-menu li {
+    padding: 0;
+  }
+
+  .nav-menu a {
+    padding: 10px 20px;
+  }
+}
+/* Madelen Hamburger Menu Stop */
