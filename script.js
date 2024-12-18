@@ -1,4 +1,3 @@
-// Madelen Todays Special Start
 if (
     document.querySelector(".special-name") &&
     document.querySelector(".special-price") &&
