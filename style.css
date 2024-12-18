@@ -13,25 +13,31 @@ body {
   /* color: #DACABD; */
 }
 
-/* .feedback-body { /* Dont know if needed */
+/* .feedback-body { Dont know if needed */
   /* justify-content: center;
   align-items: center;
-}*/
+} */
 
-.index-body {
+/* Madelen Today's Special Start */
+.index-main {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/*Madelen Today's Special Start */
 #special {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #DACABD;
-  border-radius: 15px;
-  max-width: 90%;
+ text-align: center;
+ background-color: #DACABD;
+ border-radius: 15px;
+ max-width: 90%;
+ width: 350px;
+ padding: 20px;
+ margin: 20px;
+}
+
+.special-name, .special-price {
+  font-size: 1.2rem;
+  margin-top: 15px;
 }
 
 /* Madelen Hamburger Menu Start */
@@ -99,7 +105,7 @@ body {
   display: block;
 }
 
-/* Media Query */
+/* Media Query Hamburger*/
 @media (min-width: 768px) {
   .hamburger {
     display: none;
@@ -166,3 +172,9 @@ body {
   background-color: gray;
 }
 /* Madelen Feedback form End */
+/* Media Query hamburger */
+@media (min-width: 600px) {
+  #special {
+    width: 500px;
+  }
+}

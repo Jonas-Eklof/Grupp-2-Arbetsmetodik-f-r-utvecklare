@@ -1,23 +1,40 @@
 // Madelen Todays Special Start
 
-//Todays date
-const today = new Date();
+if (
+    document.querySelector(".special-name") &&
+    document.querySelector(".special-price") &&
+    document.querySelector(".special-image")
+) {
+    const specialName = document.querySelector(".special-name");
+    const specialPrice = document.querySelector(".special-price");
+    const specialImage = document.querySelector(".special-image");
 
-//Get random index based on current day
-const randomIndex = today.getDate() % db.bbqs.length;
+    // Today's date
+    const today = new Date();
 
-//Todays special dish
-const special = db.bbqs[randomIndex];
+    // Get random index based on current day
+    const randomIndex = today.getDate() % db.bbqs.length;
 
-let specialImage = document.querySelector(".special-image");
-let specialName = document.querySelector(".special-name");
-let specialPrice = document.querySelector(".special-price");
+    // Today's special dish
+    const special = db.bbqs[randomIndex];
 
-//Set the content for today's special
-specialName.textContent = special.name;
-specialPrice.textContent = `$${special.price}`;
-specialImage.src = special.img;
-specialImage.alt = special.name;
+    // Set the content for today's special
+    specialName.textContent = special.name;
+    specialPrice.textContent = `$${special.price}`;
+    specialImage.src = special.img;
+    specialImage.alt = special.name;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 // specialName.textContent = `${db.bbqs[0].name}`;
 // specialPrice.textContent = `$${db.bbqs[0].price}`;
