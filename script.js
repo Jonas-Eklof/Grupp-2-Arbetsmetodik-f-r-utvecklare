@@ -41,7 +41,7 @@ hamburger.addEventListener("click", () => {
 });
 //Madelen Hamburger Menu Stop
 
-// Order summary -------------------------------
+// Jonas Order summary -------------------------------
 
 // Funktion för att lägga till en beställning
 function addToOrder(name, price) {
@@ -86,6 +86,32 @@ orderButtons.forEach((button) => {
 
     // lägg till i beställningen
     addToOrder(name, price);
+  });
+});
+// slut Jonas Order summary
+
+// Daniel, Få alla nödvändiga element
+const categoryButtons = document.querySelectorAll(".category-button");
+const menuItems = document.querySelectorAll(".menu-item");
+const searchBar = document.getElementById("search-bar");
+
+// Daniel, Filtrera objekt baserat på kategori
+categoryButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const category = button.dataset.category;
+
+    // Daniel, Växla aktiva klass på knappar
+    categoryButtons.forEach((btn) => btn.classList.remove("active"));
+    button.classList.add("active");
+
+    // Daniel, Visa eller dölj objekt baserat på kategori
+    menuItems.forEach((item) => {
+      if (category === "all" || item.dataset.category === category) {
+        item.style.display = "block"; // visa
+      } else {
+        item.style.display = "none"; // göm
+      }
+    });
   });
 });
 // Daniel, Sökfunktionalitet
