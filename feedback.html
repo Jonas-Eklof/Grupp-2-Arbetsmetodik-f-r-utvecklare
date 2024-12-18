@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script src="db.js" defer></script>
+
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      </head>
+      
+</head>
+<body class="feedback-body">
+
+    <nav class="navbar">
+          <!-- logo -->
+       <h1 class="logo">Taverna</h1>
+        <!-- hamburger icon -->
+  
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- menu links -->
+       <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#order">Order</a></li>
+        <li><a href="#food">Food and Drink</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+       </ul>
+      </nav>
+
+
+      <section class="feedback-container">
+    <h1 class="feedback-header">We Value Your Feedback!</h1>
+    <form class="feedback-form">
+        <!-- name field -->
+         <label for="name"><i class="fa-solid fa-user"></i> Your Name</label>
+         <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+         <!-- email field -->
+          <label for="email"><i class="fa-regular fa-envelope"></i> Your Email</label>
+          <input type="text" id="email" name="email" placeholder="Enter your email" required>
+
+          <!-- feedback field -->
+           <label for="message"><i class="fa-regular fa-comment"></i> Your Feedback</label>
+           <textarea id="message" name="message" rows="5" placeholder="Write your feedback here..." required></textarea>
+
+           <!-- submit button -->
+            <button type="button">Submit</button>
+    </form>
+    </section>
+
+
+
+
+
+
+    
+</body>
+</html>
