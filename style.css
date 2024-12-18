@@ -1,3 +1,5 @@
+
+/* Daniels CSS */
 * {
   margin: 0;
   padding: 0;
@@ -11,12 +13,11 @@ body {
   line-height: 1.7; 
 }
 
-/* Class IDs */
 #food-menu {
   padding: 50px;
   text-align: center;
 }
-
+/* Daniels class IDs */
 #food-menu h1 {
   font-size: 2rem; 
   font-weight: bold;
@@ -25,6 +26,7 @@ body {
   letter-spacing: 2px; 
   text-transform: uppercase;
 }
+
 
 .menu-item {
   width: 100%;
@@ -38,6 +40,7 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
+/* Daniels effekter */
 .menu-item:hover {
   transform: scale(1.02); 
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
@@ -75,6 +78,7 @@ body {
   letter-spacing: 1px;
 }
 
+/* Daniels beställ knapp */
 .order-now {
   display: inline-block;
   padding: 10px 20px;
@@ -95,18 +99,106 @@ body {
   transform: translateY(-3px); 
 }
 
+#category-buttons {
+  margin: 20px 0;
+  text-align: center;
+}
+
+
+.category-button {
+  background-color: #D49F54;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.category-button:hover {
+  background-color: #bf8135;
+  transform: translateY(-3px);
+}
+
+.category-button.active {
+  background-color: #bf8135;
+}
+
+/* Daniels sökfunktion */
+#search-bar {
+  width: 80%;
+  max-width: 400px;
+  padding: 12px 20px;
+  margin: 20px auto;
+  display: block;
+  font-size: 1rem;
+  border: 2px solid #D49F54;
+  border-radius: 20px;
+  background-color: #EBDBCC;
+  color: #222425;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#search-bar:focus {
+  outline: none;
+  border-color: #bf8135;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#search-bar::placeholder {
+  color: #666;
+  font-style: italic;
+}
+
+/* Daniels CSS */
+
+/* Madelen's CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 img {
   width: 100%;
 }
 
 body {
+  
   background-color: #222325;
   /* color: #DACABD; */
 }
 
-.feedback-body { /* Dont know if needed */
+/* .feedback-body { Dont know if needed */
+  /* justify-content: center;
+  align-items: center;
+} */
+
+/* Madelen Today's Special Start */
+.index-main {
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#special {
+ text-align: center;
+ background-color: #DACABD;
+ border-radius: 15px;
+ max-width: 90%;
+ width: 350px;
+ padding: 20px;
+ margin: 20px;
+}
+
+.special-name, .special-price {
+  font-size: 1.2rem;
+  margin-top: 15px;
 }
 
 /* Madelen Hamburger Menu Start */
@@ -173,29 +265,36 @@ body {
 .nav-menu.active {
   display: block;
 }
-
-/* Media Query */
-@media (min-width: 768px) {
-  .hamburger {
-    display: none;
-  }
-
-  .nav-menu {
-    display: flex;
-    position: static;
-    flex-direction: row;
-    background-color: transparent;
-  }
-
-  .nav-menu li {
-    padding: 0;
-  }
-
-  .nav-menu a {
-    padding: 10px 20px;
-  }
-}
 /* Madelen Hamburger Menu End */
+
+/* Madelen Information start */
+
+#welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  color: #858E95;
+}
+
+.information-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #D49F54;
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+  max-width: 90%;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.information {
+  color: #DACABD;
+  text-align: justify;
+  line-height: 1.6;
+}
 
 /* Madelen Feedback form Start */
 .feedback-container {
@@ -241,3 +340,31 @@ body {
   background-color: gray;
 }
 /* Madelen Feedback form End */
+
+/* Media Query Hamburger*/
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    background-color: transparent;
+  }
+
+  .nav-menu li {
+    padding: 0;
+  }
+
+  .nav-menu a {
+    padding: 10px 20px;
+  }
+}
+/* Media Query hamburger */
+@media (min-width: 600px) {
+  #special {
+    width: 500px;
+  }
+}
