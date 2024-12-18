@@ -100,7 +100,6 @@ img {
 }
 
 body {
-  
   background-color: #222325;
   /* color: #DACABD; */
 }
@@ -113,16 +112,17 @@ body {
 }
 
 #special {
- text-align: center;
- background-color: #DACABD;
- border-radius: 15px;
- max-width: 90%;
- width: 350px;
- padding: 20px;
- margin: 20px;
+  text-align: center;
+  background-color: #dacabd;
+  border-radius: 15px;
+  max-width: 90%;
+  width: 350px;
+  padding: 20px;
+  margin: 20px;
 }
 
-.special-name, .special-price {
+.special-name,
+.special-price {
   font-size: 1.2rem;
   margin-top: 15px;
 }
@@ -200,14 +200,14 @@ body {
   justify-content: center;
   align-items: center;
   margin: 10px;
-  color: #858E95;
+  color: #858e95;
 }
 
 .information-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #D49F54;
+  border: 1px solid #d49f54;
   text-align: center;
   padding: 10px;
   margin: 20px;
@@ -217,7 +217,7 @@ body {
 }
 
 .information {
-  color: #DACABD;
+  color: #dacabd;
   text-align: justify;
   line-height: 1.6;
 }
@@ -328,7 +328,6 @@ body {
   background-color: #c0392b;
 }
 
-
 /* Media Query Hamburger*/
 @media (min-width: 768px) {
   .hamburger {
@@ -356,3 +355,59 @@ body {
     width: 500px;
   }
 }
+
+#category-buttons {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.category-button {
+  background-color: #d49f54;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.category-button:hover {
+  background-color: #bf8135;
+  transform: translateY(-3px);
+}
+
+.category-button.active {
+  background-color: #bf8135;
+}
+
+/* Daniels sökfunktion */
+#search-bar {
+  width: 80%;
+  max-width: 400px;
+  padding: 12px 20px;
+  margin: 20px auto;
+  display: block;
+  font-size: 1rem;
+  border: 2px solid #d49f54;
+  border-radius: 20px;
+  background-color: #ebdbcc;
+  color: #222425;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#search-bar:focus {
+  outline: none;
+  border-color: #bf8135;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#search-bar::placeholder {
+  color: #666;
+  font-style: italic;
+}
+
+/* Daniels CSS */
