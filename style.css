@@ -9,6 +9,7 @@ img {
 }
 
 body {
+  
   background-color: #222325;
   /* color: #DACABD; */
 }
@@ -104,29 +105,36 @@ body {
 .nav-menu.active {
   display: block;
 }
-
-/* Media Query Hamburger*/
-@media (min-width: 768px) {
-  .hamburger {
-    display: none;
-  }
-
-  .nav-menu {
-    display: flex;
-    position: static;
-    flex-direction: row;
-    background-color: transparent;
-  }
-
-  .nav-menu li {
-    padding: 0;
-  }
-
-  .nav-menu a {
-    padding: 10px 20px;
-  }
-}
 /* Madelen Hamburger Menu End */
+
+/* Madelen Information start */
+
+#welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  color: #858E95;
+}
+
+.information-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #D49F54;
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+  max-width: 90%;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.information {
+  color: #DACABD;
+  text-align: justify;
+  line-height: 1.6;
+}
 
 /* Madelen Feedback form Start */
 .feedback-container {
@@ -172,6 +180,28 @@ body {
   background-color: gray;
 }
 /* Madelen Feedback form End */
+
+/* Media Query Hamburger*/
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    background-color: transparent;
+  }
+
+  .nav-menu li {
+    padding: 0;
+  }
+
+  .nav-menu a {
+    padding: 10px 20px;
+  }
+}
 /* Media Query hamburger */
 @media (min-width: 600px) {
   #special {

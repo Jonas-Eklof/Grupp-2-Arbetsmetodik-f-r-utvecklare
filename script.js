@@ -1,5 +1,4 @@
 // Madelen Todays Special Start
-
 if (
     document.querySelector(".special-name") &&
     document.querySelector(".special-price") &&
@@ -24,25 +23,7 @@ if (
     specialImage.src = special.img;
     specialImage.alt = special.name;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-// specialName.textContent = `${db.bbqs[0].name}`;
-// specialPrice.textContent = `$${db.bbqs[0].price}`;
-// specialImage.src = `${db.bbqs[0].img}`;
-
-//Madelen Todays Special Stop
-
-
+//Madelen Specials Stop
 
 
 //Madelen Hamburger Menu Start 
