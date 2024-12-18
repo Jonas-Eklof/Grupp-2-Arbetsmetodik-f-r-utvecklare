@@ -7,90 +7,108 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <script src="db.js"></script>
-  </head
+  </head>
   <body class="index-body">
-
     <nav class="navbar">
       <!-- logo -->
-       <h1 class="logo">Taverna</h1>
+      <h1 class="logo">Taverna</h1>
       <!-- hamburger icon -->
 
-    <section class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </section>
-    <!-- menu links -->
-     <ul class="nav-menu" id="nav-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#food">Food & Drink</a></li>
-      <li><a href="#order">Order</a></li>
-      <li><a href="feedback.html">Feedback</a></li>
-     </ul>
+      <section class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </section>
+      <!-- menu links -->
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#food">Food & Drink</a></li>
+        <li><a href="#order">Order</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
     </nav>
-
-
-
 
     <section id="special">
       <h1>Todays Special</h1>
-      <img class="special-image">
+      <img class="special-image" />
       <p class="special-name">Name</p>
       <p class="special-price">Price</p>
     </section>
 
+    <p class="information">
+      Välkommen till Taverna, en anrik restaurang med över 40 års gastronomisk
+      historia och en ny, spännande era som väntar! Tidigare hyllad för sitt
+      italienska kök står Taverna redo att inviga sin nyöppning i början av det
+      kommande året.
+    </p>
 
-    <p class="information">Välkommen till Taverna, en anrik restaurang med över 40 års gastronomisk historia och en ny, spännande era som väntar! Tidigare hyllad för sitt italienska kök står Taverna redo att inviga sin nyöppning i början av det kommande året.</p>
+    <section id="food-menu">
+      <h1>Food Menu</h1>
+      <article class="menu-item">
+        <img
+          class="menu-image"
+          src="https://goldbelly.imgix.net/uploads/showcase_media_asset/image/112230/pasta-dinner-for-2-choose-your-own.f5edf5a6c05115eec571d2c2f3805300.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1"
+          alt="Pasta Dinner for 2"
+        />
+        <h2>Special Pasta</h2>
+        <p></p>
+        <span>$69</span>
+        <button class="order-now">Order Now</button>
+      </article>
 
-  <section id="food-menu">
-    <h1>Food Menu</h1>
-    <article class="menu-item">
-      <img class="menu-image" src="https://goldbelly.imgix.net/uploads/showcase_media_asset/image/112230/pasta-dinner-for-2-choose-your-own.f5edf5a6c05115eec571d2c2f3805300.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1" alt="Pasta Dinner for 2">
-      <h2>Special Pasta</h2>
-      <p></p>
-      <span>$69</span>
-      <button class="order-now">Order Now</button>
-    </article>
+      <article class="menu-item">
+        <img
+          class="menu-image"
+          src="https://goldbelly.imgix.net/uploads/showcase_media_asset/image/131291/neapolitan-pizza-choose-your-own-4-pack.e9e370c647523cb3b6a8ee6f60c9a9c1.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1"
+          alt="Neapolitan Pizza 4 Pack"
+        />
+        <h2>Pizza</h2>
+        <p>Neapolitan Pizza - Choose Your Own 4 Pack</p>
+        <span>$119</span>
+        <button class="order-now">Order Now</button>
+      </article>
 
-    <article class="menu-item">
-      <img class="menu-image" src="https://goldbelly.imgix.net/uploads/showcase_media_asset/image/131291/neapolitan-pizza-choose-your-own-4-pack.e9e370c647523cb3b6a8ee6f60c9a9c1.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1" alt="Neapolitan Pizza 4 Pack">
-      <h2>Pizza</h2>
-      <p>Neapolitan Pizza - Choose Your Own 4 Pack</p>
-      <span>$119</span>
-      <button class="order-now">Order Now</button>
-    </article>
+      <article class="menu-item">
+        <img
+          class="menu-image"
+          src="https://goldbelly.imgix.net/uploads/showcase_media_asset/image/133612/goldbelly-steak-burger-sampler.30f9703bf7c2355cffa8846e328481d0.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1"
+          alt="Pat LaFrieda Meats"
+        />
+        <h2>Pat LaFrieda Meats</h2>
+        <p>Goldbelly Steak + Burger Sampler</p>
+        <span>$135</span>
+        <button class="order-now">Order Now</button>
+      </article>
 
-    <article class="menu-item">
-      <img class="menu-image" src="https://goldbelly.imgix.net/uploads/showcase_media_asset/image/133612/goldbelly-steak-burger-sampler.30f9703bf7c2355cffa8846e328481d0.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1" alt="Pat LaFrieda Meats">
-      <h2>Pat LaFrieda Meats</h2>
-      <p>Goldbelly Steak + Burger Sampler</p>
-      <span>$135</span>
-      <button class="order-now">Order Now</button>
-    </article>
+      <article class="menu-item">
+        <img
+          class="menu-image"
+          src="https://goldbelly.imgix.net/uploads/showcase_media_asset/image/134036/woodford-reserve-mint-julep-syrup.ef523ac7cbae5f4aba6b058207f490d2.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1"
+          alt="Woodford Reserve"
+        />
+        <h2>Woodford Reserve</h2>
+        <p>Woodford Reserve Mint Julep Syrup</p>
+        <span>$39</span>
+        <button class="order-now">Order Now</button>
+      </article>
 
-    <article class="menu-item">
-      <img class="menu-image" src="https://goldbelly.imgix.net/uploads/showcase_media_asset/image/134036/woodford-reserve-mint-julep-syrup.ef523ac7cbae5f4aba6b058207f490d2.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1" alt="Woodford Reserve">
-      <h2>Woodford Reserve</h2>
-      <p>Woodford Reserve Mint Julep Syrup</p>
-      <span>$39</span>
-      <button class="order-now">Order Now</button>
-    </article>
-
-    <article class="menu-item">
-      <img class="menu-image" src="https://goldbelly.imgix.net/uploads/showcase_media_asset/image/134006/sea-salted-caramel-swirl-cheesecake.e2825335433fb7a272a5d77649a6849e.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1" alt="Cotton Blues Cheesecake">
-      <h2>Cotton Blues Cheesecake</h2>
-      <p>Sea-Salted Caramel Swirl Cheesecake</p>
-      <span>$65</span>
-      <button class="order-now">Order Now</button>
-    </article>
-  </section>
-<section id="order-summary">
-  <h2>Your order:</h2>
-  <ul id="order-list"></ul>
-  <p id="total-price">Total: $0</p>
-  <button id="complete-order">Complete your order</button>
-</section>
-
-
-</body>
+      <article class="menu-item">
+        <img
+          class="menu-image"
+          src="https://goldbelly.imgix.net/uploads/showcase_media_asset/image/134006/sea-salted-caramel-swirl-cheesecake.e2825335433fb7a272a5d77649a6849e.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1"
+          alt="Cotton Blues Cheesecake"
+        />
+        <h2>Cotton Blues Cheesecake</h2>
+        <p>Sea-Salted Caramel Swirl Cheesecake</p>
+        <span>$65</span>
+        <button class="order-now">Order Now</button>
+      </article>
+    </section>
+    <section id="order-summary">
+      <h2>Your order:</h2>
+      <ul id="order-list"></ul>
+      <p id="total-price">Total: $0</p>
+      <button id="complete-order">Complete your order</button>
+    </section>
+  </body>
 </html>

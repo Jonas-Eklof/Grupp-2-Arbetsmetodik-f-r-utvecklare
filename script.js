@@ -1,18 +1,5 @@
 // Globala variabler ------------------------------------------
 
-// Todays Special variabler --------------------
-
-// let specialImage = document.querySelector(".special-image");
-// let specialName = document.querySelector(".special-name");
-// let specialPrice = document.querySelector(".special-price");
-
-// Dishes variabler -------------------------
-let dishImage = document.querySelector(".dish-image");
-let dishName = document.querySelector(".dish-name");
-let dishPrice = document.querySelector(".dish-price");
-
-// console.log(db.bbqs[0].dsc);
-
 // Order Summary variabler -------------------
 let orderList = document.getElementById("order-list");
 let totalPriceElement = document.getElementById("total-price");
@@ -22,23 +9,26 @@ let totalPrice = 0;
 
 // Todays Special content ----------------------
 
-// specialName.textContent = `${db.bbqs[0].name}`;
-// specialPrice.textContent = `${db.bbqs[0].price}`;
-// specialImage.src = `${db.bbqs[0].img}`;
+if (
+  document.querySelector(".special-name") &&
+  document.querySelector(".special-price") &&
+  document.querySelector(".special-image")
+) {
+  let specialName = document.querySelector(".special-name");
+  let specialPrice = document.querySelector(".special-price");
+  let specialImage = document.querySelector(".special-image");
 
-let specialImage = document.querySelector(".special-image");
-let specialName = document.querySelector(".special-name");
-let specialPrice = document.querySelector(".special-price");
-
-specialName.textContent = `${db.bbqs[0].name}`;
-specialPrice.textContent = `$${db.bbqs[0].price}`;
-specialImage.src = `${db.bbqs[0].img}`;
+  specialName.textContent = `${db.bbqs[0].name}`;
+  specialPrice.textContent = `$${db.bbqs[0].price}`;
+  specialImage.src = `${db.bbqs[0].img}`;
+}
 
 //Madelen Hamburger Menu Start
 const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("nav-menu");
 
 hamburger.addEventListener("click", () => {
+  console.log("hamburger clicked");
   navMenu.classList.toggle("active");
 });
 
@@ -49,6 +39,21 @@ function addToOrder(name, price) {
   // Skapa ett nytt list-element för beställningen
   let listItem = document.createElement("li");
   listItem.textContent = `${name} - $${price}`;
+
+  //   skapa en "Remove"-knapp
+  let removeButton = document.createElement("button");
+  removeButton.textContent = "Remove";
+  removeButton.classList.add("remove-button");
+
+  removeButton.addEventListener("click", () => {
+    orderList.removeChild(listItem);
+
+    totalPrice -= price;
+    totalPriceElement.textContent = `Total: $${totalPrice.toFixed(2)}`;
+  });
+
+  // lägg till "remove"-knappen till listItem
+  listItem.appendChild(removeButton);
 
   // lägg till i order-listan
   orderList.appendChild(listItem);
