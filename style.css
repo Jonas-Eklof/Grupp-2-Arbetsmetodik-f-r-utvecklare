@@ -271,7 +271,7 @@ body {
   background: #ebdbcc;
   border-radius: 8px;
   overflow: hidden;
-  max-width: 60%;
+  max-width: 70%;
   margin-inline: auto;
   margin-bottom: 20px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
@@ -322,6 +322,7 @@ body {
   cursor: pointer;
   font-size: 0.8rem;
   transition: background-color 0.3s ease;
+  max-height: 1.7rem;
 }
 
 .remove-button:hover {
