@@ -34,4 +34,3 @@ hamburger.addEventListener('click', () => {
     console.log('hamburger clicked');
     navMenu.classList.toggle('active');
 })
-//Madelen Hamburger Menu Stop
