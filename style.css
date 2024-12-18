@@ -5,10 +5,10 @@
 }
 
 body {
-  font-family: "Georgia", Arial, sans-serif; 
+  font-family: "Georgia", Arial, sans-serif;
   background-color: #222425;
   color: #333;
-  line-height: 1.7; 
+  line-height: 1.7;
 }
 
 /* Class IDs */
@@ -18,28 +18,28 @@ body {
 }
 
 #food-menu h1 {
-  font-size: 2rem; 
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #D49F54;
-  letter-spacing: 2px; 
+  color: #d49f54;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
 .menu-item {
   width: 100%;
-  background: #EBDBCC;
+  background: #ebdbcc;
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 20px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-  padding: 20px; 
+  padding: 20px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .menu-item:hover {
-  transform: scale(1.02); 
+  transform: scale(1.02);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -47,31 +47,31 @@ body {
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-bottom: 2px solid #D49F54;
+  border-bottom: 2px solid #d49f54;
   border-radius: 10px;
 }
 
 .menu-item h2 {
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
   font-weight: 600;
   margin: 12px 0;
   color: #222425;
-  letter-spacing: 1px; 
+  letter-spacing: 1px;
 }
 
 .menu-item p {
-  font-size: 1rem; 
+  font-size: 1rem;
   margin: 12px 16px;
   color: #333;
-  font-style: italic; 
+  font-style: italic;
 }
 
 .menu-item span {
   display: block;
-  font-size: 1.1rem; 
+  font-size: 1.1rem;
   font-weight: bold;
   margin-top: 12px;
-  color: #D49F54;
+  color: #d49f54;
   letter-spacing: 1px;
 }
 
@@ -79,12 +79,12 @@ body {
   display: inline-block;
   padding: 10px 20px;
   margin-top: 12px;
-  background-color: #D49F54;
+  background-color: #d49f54;
   color: #fff;
   border: none;
-  border-radius: 20px; 
+  border-radius: 20px;
   cursor: pointer;
-  font-size: 1rem; 
+  font-size: 1rem;
   text-transform: uppercase;
   font-weight: bold;
   transition: background-color 0.3s ease, transform 0.2s ease;
@@ -92,7 +92,7 @@ body {
 
 .order-now:hover {
   background-color: #bf8135;
-  transform: translateY(-3px); 
+  transform: translateY(-3px);
 }
 
 img {
@@ -104,7 +104,8 @@ body {
   /* color: #DACABD; */
 }
 
-.feedback-body { /* Dont know if needed */
+.feedback-body {
+  /* Dont know if needed */
   justify-content: center;
   align-items: center;
 }
@@ -116,8 +117,8 @@ body {
   align-items: center;
   padding: 20px 20px; /* Top, Right */
   background-color: #222325;
-  color: #D49F54;
-  border-bottom: 1px solid #D49F54; /* Thin line under nav bar */
+  color: #d49f54;
+  border-bottom: 1px solid #d49f54; /* Thin line under nav bar */
 }
 
 .logo {
@@ -135,7 +136,7 @@ body {
 }
 
 .hamburger span {
-  background-color: #D49F54;
+  background-color: #d49f54;
   height: 3px;
   width: 25px;
   margin: 3px 0; /* Top, Right */
@@ -144,7 +145,7 @@ body {
 
 /* Nav Menu */
 .nav-menu {
-  color: #D49F54;
+  color: #d49f54;
   display: none;
   list-style-type: none;
   background-color: #222325;
@@ -160,7 +161,7 @@ body {
 }
 
 .nav-menu a {
-  color: #D49F54;
+  color: #d49f54;
   text-decoration: none;
   display: block;
   padding: 10px;
@@ -199,7 +200,7 @@ body {
 
 /* Madelen Feedback form Start */
 .feedback-container {
-  background-color: #DACABD;
+  background-color: #dacabd;
   border-radius: 10px;
   margin: 30px;
   padding: 10px;
@@ -241,3 +242,41 @@ body {
   background-color: gray;
 }
 /* Madelen Feedback form End */
+
+#order-summary {
+  background: #ebdbcc;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 60%;
+  margin-inline: auto;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#order-summary li {
+  list-style: none;
+}
+
+#complete-order {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 32px;
+  background-color: #d49f54;
+  color: #fff;
+  margin-inline: auto;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#complete-order:hover {
+  background-color: #bf8135;
+  transform: translateY(-3px);
+}
