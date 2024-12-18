@@ -13,9 +13,25 @@ body {
   /* color: #DACABD; */
 }
 
-.feedback-body { /* Dont know if needed */
+/* .feedback-body { /* Dont know if needed */
+  /* justify-content: center;
+  align-items: center;
+}*/
+
+.index-body {
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/*Madelen Today's Special Start */
+#special {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DACABD;
+  border-radius: 15px;
+  max-width: 90%;
 }
 
 /* Madelen Hamburger Menu Start */

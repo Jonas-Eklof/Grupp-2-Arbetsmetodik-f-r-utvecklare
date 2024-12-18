@@ -33,6 +33,7 @@ const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
 
 hamburger.addEventListener('click', () => {
+    console.log('hamburger clicked');
     navMenu.classList.toggle('active');
-});
+})
 //Madelen Hamburger Menu Stop
