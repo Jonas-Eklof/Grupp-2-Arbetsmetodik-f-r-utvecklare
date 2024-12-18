@@ -1,3 +1,14 @@
+
+// Globala variabler ------------------------------------------
+
+// Order Summary variabler -------------------
+let orderList = document.getElementById("order-list");
+let totalPriceElement = document.getElementById("total-price");
+let totalPrice = 0;
+
+
+
+
 if (
     document.querySelector(".special-name") &&
     document.querySelector(".special-price") &&
@@ -34,3 +45,51 @@ hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 })
 //Madelen Hamburger Menu Stop
+
+// Order summary -------------------------------
+
+// Funktion för att lägga till en beställning
+function addToOrder(name, price) {
+  // Skapa ett nytt list-element för beställningen
+  let listItem = document.createElement("li");
+  listItem.textContent = `${name} - $${price}`;
+
+  //   skapa en "Remove"-knapp
+  let removeButton = document.createElement("button");
+  removeButton.textContent = "Remove";
+  removeButton.classList.add("remove-button");
+
+  removeButton.addEventListener("click", () => {
+    orderList.removeChild(listItem);
+
+    totalPrice -= price;
+    totalPriceElement.textContent = `Total: $${totalPrice.toFixed(2)}`;
+  });
+
+  // lägg till "remove"-knappen till listItem
+  listItem.appendChild(removeButton);
+
+  // lägg till i order-listan
+  orderList.appendChild(listItem);
+
+  // uppdatera totalpriset
+  totalPrice += price;
+  totalPriceElement.textContent = `Total: $${totalPrice.toFixed(2)}`;
+}
+
+// lägg till event listeners för alla "Order Now"-knappar
+let orderButtons = document.querySelectorAll(".order-now");
+
+orderButtons.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    // hitta närmaste 'menu-item' för att få data om den rätten
+    let menuItem = event.target.closest(".menu-item");
+    let name = menuItem.querySelector("h2").textContent;
+    let price = parseFloat(
+      menuItem.querySelector("span").textContent.replace("$", "")
+    );
+
+    // lägg till i beställningen
+    addToOrder(name, price);
+  });
+});
