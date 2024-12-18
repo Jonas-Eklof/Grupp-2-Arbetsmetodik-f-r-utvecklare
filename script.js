@@ -1,32 +1,55 @@
+// Daniel, Få alla nödvändiga element
+const categoryButtons = document.querySelectorAll('.category-button');
+const menuItems = document.querySelectorAll('.menu-item');
+const searchBar = document.getElementById('search-bar');
 
-// Globala variabler ------------------------------------------
+// Daniel, Filtrera objekt baserat på kategori
+categoryButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const category = button.dataset.category;
 
-// Todays Special variabler --------------------
+    // Daniel, Växla aktiva klass på knappar
+    categoryButtons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
 
-let specialImage = document.querySelector(".special-image");
-let specialName = document.querySelector(".special-name");
-let specialPrice = document.querySelector(".special-price");
+    // Daniel, Visa eller dölj objekt baserat på kategori
+    menuItems.forEach(item => {
+      if (category === 'all' || item.dataset.category === category) {
+        item.style.display = 'block'; // visa
+      } else {
+        item.style.display = 'none'; // göm
+      }
+    });
+  });
+});
 
-// Dishes variabler -------------------------
-let dishImage = document.querySelector(".dish-image");
-let dishName = document.querySelector(".dish-name");
-let dishPrice = document.querySelector(".dish-price");
+// Daniel, Sökfunktionalitet
+searchBar.addEventListener('input', () => {
+  const query = searchBar.value.toLowerCase();
 
-// console.log(db.bbqs[0].dsc);
+  menuItems.forEach(item => {
+    const title = item.querySelector('h2').textContent.toLowerCase();
+    const description = item.querySelector('p').textContent.toLowerCase();
 
-// Sid-content --------------------------------------------------
+    if (title.includes(query) || description.includes(query)) {
+      item.style.display = 'block'; // Visa
+    } else {
+      item.style.display = 'none'; // Göm
+    }
+  });
+});
 
-// Todays Special content ----------------------
+// Daniel, Initial load - Show all items and highlight 'All' button
+categoryButtons[0].classList.add('active');
+menuItems.forEach(item => item.style.display = 'block');
 
-specialName.textContent = `${db.bbqs[0].name}`;
-specialPrice.textContent = `${db.bbqs[0].price}`;
-specialImage.src = `${db.bbqs[0].img}`;
 
 //Madelen Hamburger Menu Start 
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
 
 hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
+  console.log('hamburger clicked');
+  navMenu.classList.toggle('active');
 })
-
+//Madelen Hamburger Menu Stop
