@@ -272,6 +272,59 @@ body {
 }
 /* Madelen Feedback form End */
 
+/* Madelen Seating Map Start */
+.seating-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.seating-header {
+  color: #DACABD;
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+.seating-map {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.table {
+  background-color: green;
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 80px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.table.reserved {
+  background-color: red;
+  color: white;
+}
+
+
+.notification {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #858E95;
+  color: #222325;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-size: 1rem;
+  z-index: 1;
+}
+/* Madelen Seating Map End */
+
 /* Media Query Hamburger*/
 @media (min-width: 768px) {
   .hamburger {
