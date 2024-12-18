@@ -114,6 +114,7 @@ categoryButtons.forEach((button) => {
     });
   });
 });
+
 // Daniel, Sökfunktionalitet
 searchBar.addEventListener("input", () => {
   const query = searchBar.value.toLowerCase();
