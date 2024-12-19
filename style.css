@@ -628,3 +628,8 @@ body {
   margin: 20px auto;
   border-bottom: 4px solid #d49f54;
 }
+
+.order-button-section {
+  display: flex;
+  justify-content: center;
+}
