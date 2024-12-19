@@ -276,67 +276,58 @@ body {
 }
 /* Madelen Feedback form End */
 
-#order-summary {
-  background: #ebdbcc;
-  border-radius: 8px;
-  overflow: hidden;
-  max-width: 70%;
-  margin-inline: auto;
-  margin-bottom: 20px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+/* Madelen Seating Map Start */
+.seating-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.seating-header {
+  color: #DACABD;
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+.seating-map {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
 }
 
-#order-summary li {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  margin-block: 4px;
+.table {
+  background-color: green;
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 80px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-#complete-order {
-  display: inline-block;
+
+.table.reserved {
+  background-color: red;
+  color: white;
+}
+
+
+.notification {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #858E95;
+  color: #222325;
   padding: 10px 20px;
-  margin-top: 32px;
-  background-color: #d49f54;
-  color: #fff;
-  margin-inline: auto;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
+  border-radius: 15px;
   font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 1;
 }
-
-#complete-order:hover {
-  background-color: #bf8135;
-  transform: translateY(-3px);
-}
-
-#total-price {
-  font-weight: bold;
-}
-
-.remove-button {
-  margin-left: 10px;
-  background-color: #e74c3c;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 10px;
-  cursor: pointer;
-  font-size: 0.8rem;
-  transition: background-color 0.3s ease;
-  max-height: 1.7rem;
-}
-
-.remove-button:hover {
-  background-color: #c0392b;
-}
+/* Madelen Seating Map End */
 
 /* Media Query Hamburger*/
 @media (min-width: 768px) {
