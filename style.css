@@ -412,3 +412,39 @@ body {
 }
 
 /* Daniels CSS */
+
+/*  Mohammed pop-up css */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 2px solid #d49f54;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  text-align: center;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.popup button {
+  background-color: #d49f54;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background-color: #bf8135;
+}
+
+.close-popup{
+  margin-top: 10px ;
+}
