@@ -113,6 +113,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
 }
 
 #special {
@@ -201,14 +202,21 @@ body {
 }
 /* Madelen Hamburger Menu End */
 
+#about-us {
+  background-color: #dacabd;
+  padding-block: 1rem 5rem;
+  margin-top: 2rem;
+}
+
 /* Madelen Information start */
 
 #welcome {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 2.5rem;
   margin: 10px;
-  color: #858e95;
+  color: #222325;
 }
 
 .information-container {
@@ -216,12 +224,14 @@ body {
   justify-content: center;
   align-items: center;
   border: 1px solid #d49f54;
+  background-color: #222325;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   margin: 20px;
   max-width: 90%;
   width: 500px;
   margin: 0 auto;
+  border-radius: 15px;
 }
 
 .information {
