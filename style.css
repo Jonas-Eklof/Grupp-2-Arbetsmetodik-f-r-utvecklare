@@ -112,6 +112,7 @@ body {
   display: flex; /* Flexes items */
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
 }
 
 #special {
@@ -200,14 +201,21 @@ body {
 }
 /* Madelen Hamburger Menu End */
 
+#about-us {
+  background-color: #dacabd;
+  padding-block: 1rem 5rem;
+  margin-top: 2rem;
+}
+
 /* Madelen Information start */
 
 #welcome {
   display: flex; /* Centers */
   justify-content: center;
   align-items: center;
+  font-size: 2.5rem;
   margin: 10px;
-  color: #858e95;
+  color: #222325;
 }
 
 .information-container {
@@ -215,12 +223,17 @@ body {
   justify-content: center;
   align-items: center;
   border: 1px solid #d49f54;
+  background-color: #222325;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   margin: 20px;
   max-width: 90%;
   width: 500px;
+
+  border-radius: 15px;
+
   margin: 0 auto; /* Centers horizontally */
+
 }
 
 .information {
@@ -462,6 +475,12 @@ body {
   flex-direction: column;
 }
 
+#selected-table {
+  align-self: flex-end;
+  font-style: italic;
+  font-weight: bold;
+}
+
 #order-summary li {
   list-style: none;
   display: flex;
@@ -603,4 +622,15 @@ body {
 
 .close-popup {
   margin-top: 10px;
+}
+
+#how-to-order {
+  padding: 5px;
+  text-align: center;
+  background-color: #ebdbcc;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 450px;
+  margin: 20px auto;
+  border-bottom: 4px solid #d49f54;
 }

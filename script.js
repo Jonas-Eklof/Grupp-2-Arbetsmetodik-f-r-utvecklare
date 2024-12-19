@@ -1,4 +1,5 @@
 // Madelen Todays Special Start
+
 if ( //Checks if all specified elements excists in the DOM
   document.querySelector(".special-name") && 
   document.querySelector(".special-price") &&
@@ -24,6 +25,10 @@ if ( //Checks if all specified elements excists in the DOM
   specialImage.alt = special.name;
 }
 //Madelen Specials Stop
+
+//Madelen Hamburger Menu Start
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
 
 
 //Madelen Hamburger Menu Start 
@@ -190,3 +195,22 @@ menuItems.forEach((item) => {
 // Daniel, Initial load - Show all items and highlight 'All' button
 categoryButtons[0].classList.add("active");
 menuItems.forEach((item) => (item.style.display = "block"));
+
+
+// Mohammed pop-up funktion
+const popup = document.getElementById("popup");
+const closePopupButton = document.getElementById("close-popup");
+const completeOrderButton = document.getElementById("complete-order");
+
+completeOrderButton.addEventListener("click", () => {
+  if (totalPrice > 0) {
+    popup.classList.remove("hidden"); // Visa pop-up fönstret
+  } else {
+    alert("Please add meals to your order before completing.");
+  }
+});
+
+closePopupButton.addEventListener("click", () => {
+  popup.classList.add("hidden"); // Döljer pop-up fönstret när det stängs
+});
+
