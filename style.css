@@ -369,6 +369,12 @@ body {
   flex-direction: column;
 }
 
+#selected-table {
+  align-self: flex-end;
+  font-style: italic;
+  font-weight: bold;
+}
+
 #order-summary li {
   list-style: none;
   display: flex;

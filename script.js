@@ -40,16 +40,23 @@ document.querySelectorAll(".table").forEach((table) => {
   // Single click to reserve or clear reservation
   table.addEventListener("click", () => {
     // Adds an eventlistener to table elements that listenes for a click
+
+    const selectedTableElement = document.getElementById("selected-table");
+
     if (table.classList.contains("reserved")) {
       // If the table is reserved, clear the reservation
       table.classList.remove("reserved");
       showNotificationTable(
         `${table.textContent} reservation has been cleared`
       );
+      selectedTableElement.textContent = `Selected table: none`;
     } else {
-      // If the table is not reserved, reserve it
+      document.querySelectorAll(".table.reserved").forEach((reservedTable) => {
+        reservedTable.classList.remove("reserved");
+      });
       table.classList.add("reserved");
       showNotificationTable(`${table.textContent} has been reserved`);
+      selectedTableElement.textContent = `Selected table: ${table.textContent}`;
     }
   });
 });
