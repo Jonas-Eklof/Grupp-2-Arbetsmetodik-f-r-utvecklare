@@ -126,7 +126,8 @@ body {
 }
 
 .special-name,
-.special-price { /* How Todays Special will be shown */
+.special-price {
+  /* How Todays Special will be shown */
   font-size: 1.2rem;
   margin-top: 15px;
 }
@@ -142,9 +143,10 @@ body {
   border-bottom: 1px solid #d49f54; /* Thin line under nav bar */
 }
 
-.logo { /* Taverna Logo */
-  font-size: 2.5rem; 
-  padding-left: 10px; 
+.logo {
+  /* Taverna Logo */
+  font-size: 2.5rem;
+  padding-left: 10px;
   font-family: "Baskervville SC";
   font-weight: 400; /* Thickness of font */
   letter-spacing: 2px; /* Spaces between characters */
@@ -191,7 +193,8 @@ body {
   padding: 10px;
 }
 
-.nav-menu a:hover { /* Change color when hovering over */
+.nav-menu a:hover {
+  /* Change color when hovering over */
   background-color: #555;
 }
 
@@ -233,7 +236,6 @@ body {
   border-radius: 15px;
 
   margin: 0 auto; /* Centers horizontally */
-
 }
 
 .information {
@@ -308,7 +310,8 @@ body {
   padding: 20px;
 }
 
-.table { /* Table color when free  */
+.table {
+  /* Table color when free  */
   background-color: green;
   border: 1px solid black;
   border-radius: 15px;
@@ -319,9 +322,7 @@ body {
   cursor: pointer;
 }
 
-
 .table.reserved {
-
   background-color: red;
   color: white;
 }
@@ -356,22 +357,20 @@ body {
   flex: 1; /* Each section takes up equal space */
   display: flex; /* Center content */
   flex-direction: column; /* Stacks vertically */
-  justify-content: center; 
-  align-items: center; 
-  text-align: center;  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 80%;
-  border: 1px solid #ccc; 
-  padding: 20px; 
+  border: 1px solid #ccc;
+  padding: 20px;
   min-height: 300px;
 }
-
 
 .western-event {
   background-image: url(https://images.unsplash.com/photo-1720293937341-62243dd9b217?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fGNvd2JveXxlbnwwfHwwfHx8MA%3D%3D);
   background-position: center; /* Centers image */
   background-size: cover; /* Unzooms */
 }
-
 
 .western-header,
 .western-p,
@@ -390,12 +389,11 @@ body {
   font-weight: bold;
   font-size: 16px;
   display: block; /* Ensures the background covers the full width */
-  width: 100%; 
+  width: 100%;
   background-color: hsla(0, 0%, 4%, 0.516);
-  padding: 10px; 
+  padding: 10px;
   text-align: center;
 }
-
 
 .pizza-event {
   background-image: url(https://images.unsplash.com/photo-1576458088443-04a19bb13da6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHBpenphfGVufDB8fDB8fHww);
@@ -403,13 +401,11 @@ body {
   background-size: cover; /* Unzooms */
 }
 
-
 .date-event {
   background-image: url(https://images.unsplash.com/photo-1612490689975-c062b1bdcec7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cm9tYW5jZXxlbnwwfHwwfHx8MA%3D%3D);
   background-position: center; /* Centers image */
   background-size: cover; /* Unzooms */
 }
-
 
 .trivia-event {
   background-image: url(https://images.unsplash.com/photo-1605808725370-5857ca06cd78?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTcwfHxsZWFybnxlbnwwfHwwfHx8MA%3D%3D);
@@ -417,13 +413,11 @@ body {
   background-size: cover; /* Unzooms */
 }
 
-
 .singles-event {
   background-image: url(https://images.unsplash.com/photo-1469533667357-006056eaf780?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzR8fGRlc3NlcnR8ZW58MHx8MHx8fDA%3D);
   background-position: center; /* Centers image */
   background-size: cover; /* Unzooms */
 }
-
 
 .family-event {
   background-image: url(https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZmFtaWx5JTIwcmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D);
