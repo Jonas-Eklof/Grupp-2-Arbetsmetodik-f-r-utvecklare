@@ -115,6 +115,23 @@ categoryButtons.forEach((button) => {
   });
 });
 
+// Mohammed pop-up funktion
+const popup = document.getElementById("popup");
+const closePopupButton = document.getElementById("close-popup");
+const completeOrderButton = document.getElementById("complete-order");
+
+completeOrderButton.addEventListener("click", () => {
+  if (totalPrice > 0) { 
+    popup.classList.remove("hidden"); // Visa pop-up fönstret
+  } else {
+    alert("Please add meals to your order before completing.");
+  }
+});
+
+closePopupButton.addEventListener("click", () => {
+  popup.classList.add("hidden"); // Döljer pop-up fönstret när det stängs
+});
+
 // Daniel, Sökfunktionalitet
 searchBar.addEventListener("input", () => {
   const query = searchBar.value.toLowerCase();
