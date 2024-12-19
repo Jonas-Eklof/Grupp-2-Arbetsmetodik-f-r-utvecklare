@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Taverna</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    <script src="feedback.js" defer></script>
     <script src="db.js"></script>
     <link
       rel="stylesheet"
@@ -83,8 +83,15 @@
         ></textarea>
 
         <!-- submit button -->
-        <button type="button">Submit</button>
+        <button id="submitButton" type="button">Submit</button>
       </form>
     </section>
+    <div id="feedback-popup" class="feedback-popup hidden">
+      <div class="popup-content">
+          <h2>Thank You!</h2>
+          <p>Your feedback has been submitted successfully.</p>
+          <button id="close-feedback-popup">Close</button>
+      </div>
+  </div>
   </body>
 </html>
