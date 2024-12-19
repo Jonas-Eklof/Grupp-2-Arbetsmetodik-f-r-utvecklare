@@ -1,3 +1,4 @@
+
 // Madelen Todays Special Start
 if (
     document.querySelector(".special-name") &&
@@ -190,3 +191,4 @@ searchBar.addEventListener("input", () => {
 // Daniel, Initial load - Show all items and highlight 'All' button
 categoryButtons[0].classList.add("active");
 menuItems.forEach((item) => (item.style.display = "block"));
+
