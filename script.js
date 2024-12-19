@@ -1,10 +1,10 @@
 // Madelen Todays Special Start
-if (
-  document.querySelector(".special-name") &&
+if ( //Checks if all specified elements excists in the DOM
+  document.querySelector(".special-name") && 
   document.querySelector(".special-price") &&
   document.querySelector(".special-image")
 ) {
-  const specialName = document.querySelector(".special-name");
+  const specialName = document.querySelector(".special-name"); // Makes variables for HTML elements
   const specialPrice = document.querySelector(".special-price");
   const specialImage = document.querySelector(".special-image");
 
@@ -27,12 +27,12 @@ if (
 
 
 //Madelen Hamburger Menu Start 
-const hamburger = document.getElementById('hamburger');
+const hamburger = document.getElementById('hamburger'); // Select by ID
 const navMenu = document.getElementById('nav-menu');
 
-hamburger.addEventListener('click', () => {
+hamburger.addEventListener('click', () => { // Listenes for user to interact
   console.log('hamburger clicked');
-  navMenu.classList.toggle('active');
+  navMenu.classList.toggle('active'); // Makes active when clicked
 })
 
 

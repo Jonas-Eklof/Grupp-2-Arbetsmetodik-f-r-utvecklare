@@ -105,36 +105,35 @@ img {
 
 body {
   background-color: #222325;
-  /* color: #DACABD; */
 }
 
 /* Madelen Today's Special Start */
 .index-main {
-  display: flex;
+  display: flex; /* Flexes items */
   justify-content: center;
   align-items: center;
 }
 
 #special {
-  text-align: center;
+  text-align: center; /* Ensures text is centered */
   background-color: #dacabd;
-  border-radius: 15px;
-  max-width: 90%;
+  border-radius: 15px; /* Rounded corners */
+  max-width: 90%; /* Sets max width */
   width: 350px;
-  padding: 20px;
-  margin: 20px;
+  padding: 20px; /* Padding top */
+  margin: 20px; /* Margin top */
 }
 
 .special-name,
-.special-price {
+.special-price { /* How Todays Special will be shown */
   font-size: 1.2rem;
   margin-top: 15px;
 }
 
 /* Madelen Hamburger Menu Start */
 .navbar {
-  display: flex;
-  justify-content: space-between;
+  display: flex; /* Centeres items */
+  justify-content: space-between; /* Space between items */
   align-items: center;
   padding: 20px 20px; /* Top, Right */
   background-color: #222325;
@@ -142,18 +141,18 @@ body {
   border-bottom: 1px solid #d49f54; /* Thin line under nav bar */
 }
 
-.logo {
-  font-size: 2.5rem;
-  padding-left: 10px;
+.logo { /* Taverna Logo */
+  font-size: 2.5rem; 
+  padding-left: 10px; 
   font-family: "Baskervville SC";
-  font-weight: 400;
-  letter-spacing: 2px;
+  font-weight: 400; /* Thickness of font */
+  letter-spacing: 2px; /* Spaces between characters */
 }
 
 /* Hamburger Icon */
 .hamburger {
-  display: flex;
-  flex-direction: column;
+  display: flex; /* Centers */
+  flex-direction: column; /* Stacks vertically */
   cursor: pointer;
   margin-left: auto; /* Pushes menu to the right */
   padding-right: 20px;
@@ -164,20 +163,20 @@ body {
   height: 3px;
   width: 25px;
   margin: 3px 0; /* Top, Right */
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; /* Smooth transition */
 }
 
 /* Nav Menu */
 .nav-menu {
   color: #d49f54;
-  display: none;
-  list-style-type: none;
+  display: none; /* Hides element */
+  list-style-type: none; /* No bullet points */
   background-color: #222325;
   position: absolute;
-  top: 50px;
-  left: 0;
+  top: 50px; /* Vertical position */
+  left: 0; /* Horizontal position */
   width: 100%;
-  text-align: center;
+  text-align: center; /* Centers elements */
 }
 
 .nav-menu li {
@@ -191,20 +190,20 @@ body {
   padding: 10px;
 }
 
-.nav-menu a:hover {
+.nav-menu a:hover { /* Change color when hovering over */
   background-color: #555;
 }
 
 .nav-menu.active {
   margin-top: 2rem;
-  display: block;
+  display: block; /* Makes menu visible again */
 }
 /* Madelen Hamburger Menu End */
 
 /* Madelen Information start */
 
 #welcome {
-  display: flex;
+  display: flex; /* Centers */
   justify-content: center;
   align-items: center;
   margin: 10px;
@@ -212,7 +211,7 @@ body {
 }
 
 .information-container {
-  display: flex;
+  display: flex; /* Centers */
   justify-content: center;
   align-items: center;
   border: 1px solid #d49f54;
@@ -221,13 +220,13 @@ body {
   margin: 20px;
   max-width: 90%;
   width: 500px;
-  margin: 0 auto;
+  margin: 0 auto; /* Centers horizontally */
 }
 
 .information {
   color: #dacabd;
-  text-align: justify;
-  line-height: 1.6;
+  text-align: justify; /* Makes text all take up same space */
+  line-height: 1.6; /* Vertical space between text */
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -244,7 +243,7 @@ body {
 }
 
 .feedback-form label {
-  display: block;
+  display: block; /* Takes up full width of container */
   margin-bottom: 8px;
   font-weight: bold;
 }
@@ -278,7 +277,7 @@ body {
 
 /* Madelen Seating Map Start */
 .seating-main {
-  display: flex;
+  display: flex; /* Centers */
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -291,13 +290,13 @@ body {
 }
 
 .seating-map {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: grid; /* Allows to arrange child elements in rows and columns */
+  grid-template-columns: repeat(4, 1fr); /* 4 columns taking up equal space */
   gap: 10px;
   padding: 20px;
 }
 
-.table {
+.table { /* Table color when free  */
   background-color: green;
   border: 1px solid black;
   border-radius: 15px;
@@ -309,20 +308,20 @@ body {
 }
 
 
-.table.reserved {
+.table.reserved { /* Table color when reserved */
   background-color: red;
   color: white;
 }
 
 
-.notification {
-  display: none;
-  position: fixed;
+.notification { /* Notification when you book and clear table */
+  display: none; /* Hidden by default */
+  position: fixed; /* Stays in place even when page is scrolled */
   bottom: 20px;
   right: 20px;
   background-color: #858E95;
   color: #222325;
-  padding: 10px 20px;
+  padding: 10px 20px; /* Top, Right */
   border-radius: 15px;
   font-size: 1rem;
   z-index: 1; /* Text appears infront of other items */
@@ -332,7 +331,7 @@ body {
 /* Madelen Events Start */
 
 .event-container {
-  display: flex;
+  display: flex; /* Centers */
   justify-content: center;
   align-items: center;
   flex-direction: column; /* Stacks vertically */
@@ -342,14 +341,14 @@ body {
 
 .event-container section {
   flex: 1; /* Each section takes up equal space */
-  display: flex; /* Center content within the section */
-  flex-direction: column; /* Stack content vertically */
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
-  text-align: center;  /* Center text */
-  width: 80%; /* Optional: Set a consistent width */
-  border: 1px solid #ccc; /* Optional: Add a border for clarity */
-  padding: 20px; /* Add padding for content inside sections */
+  display: flex; /* Center content */
+  flex-direction: column; /* Stacks vertically */
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;  
+  width: 80%;
+  border: 1px solid #ccc; 
+  padding: 20px; 
   min-height: 300px;
 }
 
@@ -378,10 +377,10 @@ body {
   font-weight: bold;
   font-size: 16px;
   display: block; /* Ensures the background covers the full width */
-  width: 100%; /* Makes the element take up the full width */
+  width: 100%; 
   background-color: hsla(0, 0%, 4%, 0.516);
-  padding: 10px; /* Add padding to give space around the text */
-  text-align: center; /* Ensure text is centered */
+  padding: 10px; 
+  text-align: center;
 }
 
 
