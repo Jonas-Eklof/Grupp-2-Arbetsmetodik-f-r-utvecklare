@@ -527,3 +527,14 @@ body {
 .close-popup {
   margin-top: 10px;
 }
+
+#how-to-order {
+  padding: 5px;
+  text-align: center;
+  background-color: #ebdbcc;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 450px;
+  margin: 20px auto;
+  border-bottom: 4px solid #d49f54;
+}

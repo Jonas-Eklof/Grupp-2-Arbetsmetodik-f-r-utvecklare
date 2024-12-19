@@ -35,6 +35,11 @@
         <li><a href="feedback.html">Feedback</a></li>
       </ul>
     </nav>
+<!-- How to order -->
+        <section id="how-to-order">
+      <h2>How to Order</h2>
+      <p>Start by selecting your table in the Table section. Browse the menu, click Order for the items you want, and review your choices in Your order. When ready, click Complete your order to confirm. Enjoy your meal!</p>
+    </section>
 
     <main class="seating-main">
       <section class="seating-container">
@@ -107,6 +112,228 @@
         <span>$119</span>
         <button class="order-now">Add to your order</button>
       </article>
+
+      <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taverna</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script src="db.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <!-- logo -->
+      <h1 class="logo">Taverna</h1>
+      <!-- hamburger icon -->
+
+      <section class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </section>
+      <!-- menu links -->
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+
+    <main class="seating-main">
+      <section class="seating-container">
+        <p class="seating-header">Where are you sitting?</p>
+        <section class="seating-map">
+          <button class="table" id="table-1" aria-label="Table 1">
+            Table 1
+          </button>
+          <button class="table" id="table-1" aria-label="Table 1">
+            Table 2
+          </button>
+          <button class="table" id="table-1" aria-label="Table 1">
+            Table 3
+          </button>
+          <button class="table" id="table-1" aria-label="Table 1">
+            Table 4
+          </button>
+          <button class="table" id="table-1" aria-label="Table 1">
+            Table 5
+          </button>
+          <button class="table" id="table-1" aria-label="Table 1">
+            Table 6
+          </button>
+          <button class="table" id="table-1" aria-label="Table 1">
+            Table 7
+          </button>
+          <button class="table" id="table-1" aria-label="Table 1">
+            Table 8
+          </button>
+        </section>
+        <aside id="notification" class="notification"></aside>
+      </section>
+    </main>
+
+    <section id="food-menu">
+      <h1>Food Menu</h1>
+      <input id="search-bar" type="text" placeholder="Search menu items..." />
+
+      <!-- Daniel Category Buttons -->
+      <div id="category-buttons">
+        <button class="category-button" data-category="all">All</button>
+        <button class="category-button" data-category="mains">Mains</button>
+        <button class="category-button" data-category="drinks">Drinks</button>
+        <button class="category-button" data-category="desserts">
+          Desserts
+        </button>
+      </div>
+
+      <!-- Daniel Menu Items -->
+      <article class="menu-item" data-category="mains">
+        <img
+          class="menu-image"
+          src="https://goldbelly.imgix.net/uploads/showcase_media_asset/image/112230/pasta-dinner-for-2-choose-your-own.f5edf5a6c05115eec571d2c2f3805300.jpg"
+          alt="Pasta Dinner for 2"
+        />
+        <h2>Special Pasta</h2>
+        <p></p>
+        <span>$69</span>
+        <button class="order-now">Add to your order</button>
+      </article>
+
+      <article class="menu-item" data-category="mains">
+        <img
+          class="menu-image"
+          src="https://goldbelly.imgix.net/uploads/showcase_media_asset/image/131291/neapolitan-pizza-choose-your-own-4-pack.e9e370c647523cb3b6a8ee6f60c9a9c1.jpg"
+          alt="Neapolitan Pizza 4 Pack"
+        />
+        <h2>Pizza</h2>
+        <p>Neapolitan Pizza - Choose Your Own 4 Pack</p>
+        <span>$119</span>
+        <button class="order-now">Add to your order</button>
+      </article>
+
+      <article class="menu-item" data-category="drinks">
+        <img
+          class="menu-image"
+          src="https://goldbelly.imgix.net/uploads/showcase_media_asset/image/79619/joes-kc-ribs-brisket-and-burnt-ends.6710e994980e485e6441b794717ad6fb.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1"
+          alt="Joe's KC BBQ"
+        />
+        <h2>Joe's KC BBQ</h2>
+        <p>Joe's KC Ribs, Brisket & Burnt Ends</p>
+        <span>$110</span>
+        <button class="order-now">Add to your order</button>
+      </article>
+
+      <article class="menu-item" data-category="mains">
+        <img
+          class="menu-image"
+          src="https://goldbelly.imgix.net/uploads/showcase_media_asset/image/133612/goldbelly-steak-burger-sampler.30f9703bf7c2355cffa8846e328481d0.jpg"
+          alt="Pat LaFrieda Meats"
+        />
+        <h2>Pat LaFrieda Meats</h2>
+        <p>Goldbelly Steak + Burger Sampler</p>
+        <span>$135</span>
+        <button class="order-now">Add to your order</button>
+      </article>
+
+      <article class="menu-item" data-category="drinks">
+        <img
+          class="menu-image"
+          src="https://goldbelly.imgix.net/uploads/showcase_media_asset/image/134036/woodford-reserve-mint-julep-syrup.ef523ac7cbae5f4aba6b058207f490d2.jpg"
+          alt="Woodford Reserve"
+        />
+        <h2>Woodford Reserve</h2>
+        <p>Woodford Reserve Mint Julep Syrup</p>
+        <span>$39</span>
+        <button class="order-now">Add to your order</button>
+      </article>
+
+      <article class="menu-item" data-category="desserts">
+        <img
+          class="menu-image"
+          src="https://goldbelly.imgix.net/uploads/showcase_media_asset/image/134006/sea-salted-caramel-swirl-cheesecake.e2825335433fb7a272a5d77649a6849e.jpg"
+          alt="Cotton Blues Cheesecake"
+        />
+        <h2>Cotton Blues Cheesecake</h2>
+        <p>Sea-Salted Caramel Swirl Cheesecake</p>
+        <span>$65</span>
+        <button class="order-now">Add to your order</button>
+      </article>
+
+      <article class="menu-item" data-category="desserts">
+        <img
+          class="menu-image"
+          src="https://goldbelly.imgix.net/uploads/showcase_media_asset/image/132029/german-chocolate-killer-brownie-tin-pack.5ebc34160f28767a9d94c4da2e04c4b9.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1"
+          alt="Killer Brownie®"
+        />
+        <h2>Killer Brownie®</h2>
+        <p>German Chocolate Killer Brownie®</p>
+        <span>$39</span>
+        <button class="order-now">Add to your order</button>
+      </article>
+
+      <article class="menu-item" data-category="desserts">
+        <img
+          class="menu-image"
+          src="https://goldbelly.imgix.net/uploads/showcase_media_asset/image/131609/dessert-bar-care-package.324aa28fe98c9dc67b75aac43376902e.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1"
+          alt="Bread and Roses Bakery"
+        />
+        <h2>Bread and Roses Bakery</h2>
+        <p>Dessert Bar Care Package</p>
+        <span>$65</span>
+        <button class="order-now">Add to your order</button>
+      </article>
+
+      <article class="menu-item" data-category="drinks">
+        <img
+          class="menu-image"
+          src="https://goldbelly.imgix.net/uploads/showcase_media_asset/image/84522/new-orleans-hurricane-mix.4613584fc65cb0787024dd24d2a8f4b3.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1"
+          alt="Franco's Hurricane Mix"
+        />
+        <h2>Franco's Hurricane Mix</h2>
+        <p>New Orleans Hurricane Mix</p>
+        <span>$39</span>
+        <button class="order-now">Add to your order</button>
+      </article>
+
+      <article class="menu-item" data-category="drinks">
+        <img
+          class="menu-image"
+          src="https://goldbelly.imgix.net/uploads/showcase_media_asset/image/108725/hong-kong-boba-tea-kit-for-6.63841de36d8e5edfafa13023fc303285.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1"
+          alt="New Territories"
+        />
+        <h2>New Territories</h2>
+        <p>Hong Kong Boba Tea Kit for 6</p>
+        <span>$59</span>
+        <button class="order-now">Add to your order</button>
+      </article>
+    </section>
+    <section id="order-summary">
+      <p id="selected-table">Selected table: None</p>
+      <h2>Your order:</h2>
+      <ul id="order-list"></ul>
+      <p id="total-price">Total: $0</p>
+      <button id="complete-order">Complete your order</button>
+    </section>
+
+    <!-- beställningsbekräftelse pop-up-->
+    <section id="popup" class="popup hidden">
+      <p>Thank you for your order!</p>
+      <button class="close-popup" id="close-popup">Close</button>
+    </section>
+  </body>
+</html>
 
       <article class="menu-item" data-category="mains">
         <img
